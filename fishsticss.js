@@ -49,7 +49,7 @@ var Fishsticss = function() {
 	this.patterns = {
 		selector: /([_a-zA-Z0-9-:,#:.\[\]="\s]?[_a-zA-Z0-9-*:>+,#:.\(\)\[\]=|~^$"\s]*)\s*\{\s*([\S\s]*?)\s*\}/gm,
 		rule: /(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)\s*:\s*([_a-zA-Z0-9-%#'",.\(\)\s]+);*/gm,
-		comment: /\/\*[\S\s]*\*\//gm
+		comment: /[\/\*\S\s]*\*\/]/gm
 	};
 
 	/* Scrub-a-dub-dub */
